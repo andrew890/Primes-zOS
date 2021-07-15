@@ -1,14 +1,12 @@
 # COBOL implementation
 
-Based on code from <https://github.com/PlummersSoftwareLLC/Primes/tree/drag-race/PrimeCOBOL/solution_1>
-
-I took the above code and made some minor changes to properly compile on a real mainframe.
+Based on code from <https://github.com/PlummersSoftwareLLC/Primes/tree/drag-race/PrimeCOBOL/solution_1> and <https://github.com/PlummersSoftwareLLC/Primes/pull/333>
 
 ## Run instructions
 
-Create a partition dataset (I called it &SYSUID.DGARAGE). Inside this dataset create two members: JCL and PRIMES.
+File PRIMES contains both JCL and COBOL. It can be edited and submitted from the git checkout directory - there is no need to copy to a dataset.
 
-Submit the JCL job and wait. After the job is completed, the member OUTPUT will appear in the above dataset.
+Edit the job card as necessary and submit the job. Output appears in the job SYSOUT.
 
 ## Output
 
