@@ -1,7 +1,6 @@
 # Primes-zOS
 
-This repository contains z/OS adapted solutions for programs from 
-[Dave Plummer's Software Drag Racing](https://github.com/PlummersSoftwareLLC/Primes) repository. See the original repository for a description of the project.
+This repository contains z/OS adapted solutions for programs from the Dave's Garage [Software Drag Racing](https://github.com/PlummersSoftwareLLC/Primes) repository. See the original repository for a description of the project.
 
 These are z/OS specific adaptations rather than improved/faster versions so they do not add anything to the drag racing project. For that reason they have not been incorporated into the original repository.
 
