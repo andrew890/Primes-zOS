@@ -9,10 +9,12 @@
            03  SHOW_RESULTS               PIC 9(4)   COMP VALUE 0.
            03  MAX_TIME_SEC               PIC 9(4)   COMP VALUE 5.
        01  DRAG-RACE-CALCULATIONS.
-           03  AVG                        PIC 9(1)v99999 COMP-3.
+           03  AVG                        PIC 9(3)V99 COMP-3.
+           03  AVG-DISPLAY                PIC 9(3).99.
            03  VAL-RES                    PIC X(5).
            03  PASSES                     PIC 9(5)   COMP.
-           03  DURATION-SEC               PIC 9(1)V9 COMP-3.
+           03  DURATION-SEC               PIC 9(3)V99 COMP-3.
+           03  DURATION-DISPLAY           PIC 9(3).99.
        01  SIEVE-CALCULATIONS.
            03  MAX_ROOT                   PIC 9(7)   COMP.
            03  MAX_ROOT_INDEX             PIC 9(7)   COMP.
@@ -99,9 +101,11 @@
            COMPUTE AVG =  DURATION-SEC / PASSES.
            PERFORM COUNT-PRIMES THROUGH END-COUNT-PRIMES.
            PERFORM IS-VALID THROUGH END-IS-VALID.
+           MOVE DURATION-SEC TO DURATION-DISPLAY.
+           MOVE AVG TO AVG-DISPLAY.
            DISPLAY "Passes: ", PASSES,
-                   ", Time: ", DURATION-SEC,
-                   ", Avg: ", AVG,
+                   ", Time: ", DURATION-DISPLAY,
+                   ", Avg: ", AVG-DISPLAY,
                    " (sec/pass), Limit: ", MAX_LIMIT,
                    ", Count: ", PRIME-COUNT,
                    ", Valid: ", VAL-RES.
