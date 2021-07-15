@@ -1,0 +1,6 @@
+# git's files (which MUST be ASCII or UTF-8)
+.gitattributes zos-working-tree-encoding=iso8859-1
+.gitignore zos-working-tree-encoding=iso8859-1
+
+# Java source: convert to EBCDIC
+*.java zos-working-tree-encoding=ibm-1047
