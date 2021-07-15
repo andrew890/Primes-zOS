@@ -16,8 +16,8 @@
            03  SHOW_RESULTS               PIC 9(4)   COMP VALUE 0.
            03  MAX_TIME_SEC               PIC 9(4)   COMP VALUE 5.
        01  DRAG-RACE-CALCULATIONS.
-           03  AVG                        PIC 9(3)V99 COMP-3.
-           03  AVG-DISPLAY                PIC 9(3).99.
+           03  AVG                        PIC 9(3)V99999 COMP-3.
+           03  AVG-DISPLAY                PIC 9(3).99999.
            03  VAL-RES                    PIC X(5).
            03  PASSES                     PIC 9(5)   COMP.
            03  DURATION-SEC               PIC 9(3)V99 COMP-3.
